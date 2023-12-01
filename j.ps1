@@ -1,0 +1,1 @@
+Add-Type -assemblyName System.Windows.Forms;$a=@(1..100);while(1){$c=[System.Windows.Forms.Cursor]::Position;start-sleep -seconds 5;if ($c -eq $([System.Windows.Forms.Cursor]::Position)) {[System.Windows.Forms.Cursor]::Position=New-Object System.Drawing.Point(($a|get-random),($a|get-random))}}
